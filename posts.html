@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Design by foolishdeveloper.com -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Post html css</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+
+
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #d7dfe2;
+  background: white;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 350px;
+  margin: 1rem;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 40px #d7dfe2;
+}
+
+.banner-img {
+  position: absolute;
+  object-fit: cover;
+  height: 14rem;
+  width: 100%;
+}
+
+.category-tag {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: red;
+  padding: 0.5rem 1.3rem 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.popular {
+  background: #ef257a;
+}
+
+.technology {
+  background: #651fff;
+}
+
+.psychology {
+  background: #e85808;
+}
+
+.card-body {
+  margin: 15rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4d97b2;
+}
+
+.blog-title {
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.blog-description {
+  color: #616b74;
+  font-size: 0.9rem;
+}
+
+.card-profile {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-profile-info {
+  margin-left: 1rem;
+}
+
+.profile-name {
+  font-size: 1rem;
+}
+
+.profile-followers {
+  color: #616b74;
+  font-size: 0.9rem;
+}
+
+  </style>
+
+</head>
+<body>
+<!-- =========== HEADER  START============= -->
+<header>
+    <nav class="nav">
+      <a href="/" class="logo"> Physician Assisted Wellness</a>
+
+
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonial.html">Patient Testimonials</a>
+        <a href="helpful.html">Helpful Links</a>
+        <a href="posts.html">Posts</a>
+      </div>
+
+      <button class="openbtn hamburger" onclick="openNav()">&#9776; </button>
+
+      <div class="nav__link hide">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonial.html">Patient Testimonials</a>
+        <a href="helpful.html">Helpful Links</a>
+        <a href="posts.html">Posts</a>
+      </div>
+    </nav>
+</header>
+
+<!-- =========== HEADER END ============= -->
+
+<!-- =========== HERO START ============= -->
+  <div class="banner">
+    <div class="banner-content">
+        <h1>Welcome to Our Website</h1>
+    </div>
+</div>
+<!-- =========== HERO END ============= -->
+
+
+<section class="main-cont">
+  <div class="wrapper">
+
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag popular">Dairy</p>
+        <img class="banner-img" src='assets/dairy.avif' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#Dairy #Product</p>
+        <h2 class="blog-title">The truth about dairy products</h2>
+        <p class="blog-description">What is the truth about dairy products? The dairy industry spends millions of dollars every year to try to convince us that milk and cheese are healthy, and even essential for growing strong bones. This video, from NutritionFacts.org reports on…</p>
+
+        <div class="card-profile">
+          <img class="profile-img" src='assets/JSHeadshot926.jpg' alt=''>
+          <div class="card-profile-info">
+            <h3 class="profile-name">DR Sheline</h3>
+            <!-- <p class="profile-followers">5.2k followers</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Meals</p>
+        <img class="banner-img" src='assets/apples-on-scale.jpg' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#Meal #Diet</p>
+        <h2 class="blog-title">Need vegan meals delivered, or your own diet consultant?</h2>
+        <p class="blog-description">For those who either don’t know how to start cooking “vegan”, OR if you just want to try out a vegan diet for 10 days to see how you feel, check out PlantPureNation.  If you start trying to prepare vegan meals and have questions, you can get your own dietary consultant at Lighter.World.  To get a consultant,…</p>
+
+        <div class="card-profile">
+          <img class="profile-img" src='assets/JSHeadshot926.jpg'
+          <div class="card-profile-info">
+            <h3 class="profile-name">Dr Sheline</h3>
+            <!-- <p class="profile-followers">15.7k followers</p> -->
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Plants</p>
+        <img class="banner-img" src='assets/plants.jpg' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#Plant #Benefit</p>
+        <h2 class="blog-title">Environmental benefits of eating plants</h2>
+        <p class="blog-description">Environmental benefits of plant based nutrition Improving your health is not the only reason to switch to a more plant-based diet.  Animal agriculture does immense harm to the planet; it is responsible for: About half of all “greenhouse gas equivalents”, vs. entire transportation sector produces ~14%. 55% of water use in the U.S. 75% of…</p>
+
+        <div class="card-profile">
+          <img class="profile-img" src='assets/JSHeadshot926.jpg'
+          <div class="card-profile-info">
+            <h3 class="profile-name">Dr Sheline</h3>
+            <!-- <p class="profile-followers">15.7k followers</p> -->
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Diabetes</p>
+        <img class="banner-img" src='assets/diabetes.avif' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#Pre #Diabities</p>
+        <h2 class="blog-title">Pre-diabetes</h2>
+        <p class="blog-description">Pre-diabetes: A disease you can prevent, and also cure, by changing your nutrition. What is it? People with “pre-diabetes” have elevated blood glucose, but the level is intermediate, between normal and full-blown diabetes. Diagnosis: Fasting blood glucose level from 100-125 (Note: below 100 is normal, and above 125 is diabetes).  OR, “hemoglobin A1c test” (which…</p>
+
+        <div class="card-profile">
+          <img class="profile-img" src='assets/JSHeadshot926.jpg'
+          <div class="card-profile-info">
+            <h3 class="profile-name">Dr Sheline</h3>
+            <p class="profile-followers">15.7k followers</p>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card">
+      <div class="card-banner">
+        <p class="category-tag technology">Nutrition</p>
+        <img class="banner-img" src='assets/nutrition.jpg' alt=''>
+      </div>
+      <div class="card-body">
+        <p class="blog-hashtag">#nutrition #resources</p>
+        <h2 class="blog-title">Plant based nutrition resources</h2>
+        <p class="blog-description">Helpful links, which you need to know about: (hit Ctrl. + click to follow link) I. Websites with which you should become familiar: NutritionFacts.org — is the premier source of peer-reviewed information about nutrition, delivered in short video clips PCRM.org — great source of educational brochures PlantricianProject.org — another excellent source of brochures, books, movies, information LifestyleMedicine.org — more great…</p>
+
+        <div class="card-profile">
+          <img class="profile-img" src='assets/JSHeadshot926.jpg'
+          <div class="card-profile-info">
+            <h3 class="profile-name">Dr Sheline</h3>
+            <!-- <p class="profile-followers">15.7k followers</p> -->
+          </div>
+        </div>
+      </div>
+
+    
+  </div>
+</section>
+</body>
+</html>
