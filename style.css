@@ -23,6 +23,7 @@ header a{
   }
   header .nav a:hover{
     color: rgb(109, 158, 42);
+    background-color: #fff;
   }
   
   .logo {
@@ -374,9 +375,30 @@ header a{
   transform: translateY(-20px);
 }
 
+.bbttnn{
+  width: 200px;
+  background: #A3EA4A;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #A3EA4A;
+  transition: 0.5s;
+
+}
+.bbttnn:hover{
+  /* width: 100px; */
+  background: #fff;
+  color: #FFF;
+}
+.bbttnn a{
+  text-decoration: none;
+}
+
 .contact-form .input-box input[type="submit"]
 {
-  width: 100%;
+  width: 100px;
   background: #A3EA4A;
   color: #FFF;
   border: none;
